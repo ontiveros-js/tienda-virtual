@@ -1,0 +1,34 @@
+@import 'vars';
+
+.OrderItem {
+	display: grid;
+	background-color: var(--text-input-field);
+	border-radius: 20px;
+	grid-template-columns: auto auto auto;
+	gap: 16px;
+	margin-bottom: 24px;
+	align-items: center;
+}
+
+.OrderItem div{
+	display: flex;
+    flex-direction: column
+}
+
+.OrderItem figure {
+	margin: 0;
+}
+.OrderItem figure img {
+	width: 70px;
+	height: 70px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+.OrderItem p:nth-child(2) {
+	color: var(--very-light-pink);
+	margin-top: 0;
+}
+.OrderItem p:nth-child(3) {
+	font-size: var(--md);
+	font-weight: bold;
+}

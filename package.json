@@ -1,17 +1,24 @@
 {
   "name": "tienda",
   "version": "0.1.0",
+  "homepage": "https://ontiveros-js.github.io/tienda-virtual",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^3.0.1",
+    "sweetalert2": "^11.3.10",
+    "webpack": "4.42.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.4.0"
   }
 }
